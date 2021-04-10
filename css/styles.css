@@ -44,7 +44,7 @@ p {
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h1 {
@@ -86,7 +86,7 @@ a {
 
 /* Badges */
 .badge {
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 0.5rem 2rem;
   font-weight: 600;
   white-space: nowrap;
@@ -162,4 +162,78 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Buttons */
+.button {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.button--hero {
+  width: 100%;
+  background: var(--color-accent);
+  color: white;
+  padding: 2.4rem;
+  font-weight: bold;
+}
+
+.button--search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ff3400;
+  padding: 2rem 4.5rem 2rem 3rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.search {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+.button--alternative {
+  background: var(--color-secondary);
+}
+
+.button--sell {
+  width: 100%;
+  border: 2px solid var(--color-headings);
+  background: none;
+  color: var(--color-headings);
+  padding: 2.4rem;
+  font-weight: 600;
+}
+
+.button--sell:hover {
+  background: var(--color-headings);
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.5rem;
+  }
+
+  .button--hero {
+    width: max-content;
+    padding: 2.4rem 4rem;
+  }
+
+  .button--search {
+    padding: 1.5rem 4.5rem 1.5rem 3rem;
+  }
+
+  .button--sell {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
 }
