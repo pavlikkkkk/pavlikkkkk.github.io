@@ -9,6 +9,12 @@
   --border-radius: 30px;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
@@ -170,9 +176,12 @@ a {
 .button {
   text-transform: uppercase;
   font-size: 1.8rem;
+  font-weight: 600;
   border: none;
   outline: none;
-  border-radius: 10rem;
+  border-radius: 40px;
+  text-align: center;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -192,7 +201,6 @@ a {
   padding: 2rem 4.5rem 2rem 3rem;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
 }
 
 .search {
