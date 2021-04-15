@@ -102,7 +102,7 @@ a {
 }
 
 .badge--primary {
-  background: var(--color-primary);
+  background: #126de4;
   color: #ffffff;
 }
 
@@ -316,8 +316,8 @@ a {
 .plan__name {
   font-size: 2.4rem;
   font-weight: bold;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .plan__price {
@@ -335,7 +335,8 @@ a {
   font-size: 2rem;
   font-weight: 300;
   display: block;
-  margin-top: 3.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .plan .list__item {
@@ -347,9 +348,24 @@ a {
   position: relative;
 }
 
+.plan--popular .plan__billing-cycle {
+  margin-right: 1rem;
+}
+
+.plan--popular .plan__name {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.plan--popular .plan__description {
+  color: #a5c5ff;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
 @media screen and (min-width: 1024px) {
   .plan__name {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   .plan__price {
