@@ -26,6 +26,7 @@ body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   color: var(--color-body);
   font-size: 2.4rem;
+  line-height: 1.4;
   margin: 10px;
 }
 
@@ -190,6 +191,7 @@ a {
 /* Buttons */
 .button {
   text-transform: uppercase;
+  height: max-content;
   font-size: 1.8rem;
   font-weight: 600;
   border: none;
@@ -200,12 +202,19 @@ a {
   cursor: pointer;
 }
 
+.button--stretched {
+  padding: 2.5rem 9rem;
+}
+
 .button--hero {
-  width: 100%;
   background: var(--color-accent);
   color: white;
-  padding: 2.4rem;
   font-weight: bold;
+}
+
+.button--hero:hover {
+  background: #f33506;
+  transition: 0.1s ease-in;
 }
 
 .button--search {
@@ -218,6 +227,10 @@ a {
   font-weight: bold;
 }
 
+.button--search:hover {
+  background: #f53506;
+}
+
 .search {
   width: 25px;
   height: 25px;
@@ -226,6 +239,10 @@ a {
 
 .button--alternative {
   background: var(--color-secondary);
+}
+
+.button--alternative:hover {
+  background: #02cdf1;
 }
 
 .button--sell {
@@ -250,7 +267,6 @@ a {
 
   .button--hero {
     width: max-content;
-    padding: 2.4rem 4rem;
   }
 
   .button--search {
@@ -510,5 +526,53 @@ a {
   }
   .testimonial .quote .media__image {
     bottom: 14px;
+  }
+}
+
+/* Callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout__text {
+  word-spacing: 2px;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.callout .button {
+  justify-self: center;
+  align-self: center;
+  width: max-content;
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .button {
+    justify-self: start;
+    margin: 0 2rem;
   }
 }
