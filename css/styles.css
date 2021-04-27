@@ -98,7 +98,7 @@ a {
 /* Badges */
 .badge {
   border-radius: 25px;
-  padding: 0.5rem 2rem;
+  padding: 1rem 1rem;
   font-weight: 600;
   white-space: nowrap;
   font-size: 2rem;
@@ -131,6 +131,7 @@ a {
 /* Lists */
 .list {
   list-style: none;
+  padding-inline-start: 0;
   padding-left: none;
   color: var(--color-headings);
 }
@@ -302,7 +303,7 @@ a {
 .input-group .input {
   border: none;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .button {
@@ -322,11 +323,15 @@ a {
   overflow: visible;
 }
 
-.card__header,
-.card__body {
+.card__header {
   padding: 2rem 3rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
+.card__body {
+  padding: 3rem 2rem 5rem 3rem;
+}
 .card--primary .card__header {
   background-color: var(--color-primary);
   color: #fff;
@@ -353,13 +358,13 @@ a {
 
 .plan__price {
   font-size: 6rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 .plan__billing-cycle {
   font-weight: 300;
   font-size: 2.4rem;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .plan__description {
@@ -734,5 +739,67 @@ a {
   .hero__content {
     text-align: left;
     align-self: center;
+  }
+}
+
+/* Domain blocks */
+
+.block-domain .input-group {
+  box-shadow: 0 0 20px 15px rgba(235, 235, 235, 0.897);
+  border: none;
+  max-width: 700px;
+  margin: 5rem auto 6rem auto;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 6rem 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-domain__prices {
+    font-size: 1.6rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .block-domain .input-group {
+    margin: 4rem auto 4rem auto;
+  }
+}
+
+/* Plans block */
+
+.domains {
+  margin-top: 3rem;
+}
+
+.plans-block {
+  margin: 0 auto;
+  max-width: 80rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .plans-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(207, 207, 207, 0.897);
+    transition: 0.5s ease-in-out;
+  }
+
+  .domains {
+    display: flex;
+    justify-content: space-around;
+  }
+  .plans-block {
+    margin: 0 1.5rem;
+  }
+
+  .plans-block .card {
+    min-width: 31rem;
+    max-width: 35rem;
   }
 }
