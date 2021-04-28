@@ -24,6 +24,7 @@ html {
 
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
+  font-weight: normal;
   color: var(--color-body);
   font-size: 2.4rem;
   line-height: 1.4;
@@ -131,7 +132,7 @@ a {
 /* Lists */
 .list {
   list-style: none;
-  padding-inline-start: 0;
+  padding-inline-start: 20px;
   padding-left: none;
   color: var(--color-headings);
 }
@@ -405,7 +406,7 @@ a {
   display: inline-block;
   position: absolute;
   top: -5px;
-  right: 40px;
+  right: 30px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -801,5 +802,31 @@ a {
   .plans-block .card {
     min-width: 31rem;
     max-width: 35rem;
+  }
+}
+
+/* Features */
+.feature__heading {
+  margin: 1.5rem 0;
+}
+.feature {
+  gap: 4rem 4rem;
+}
+.feature__image {
+  width: 100%;
+}
+
+.feature--header {
+  text-align: center;
+  --padding-vertical: 7.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature {
+    --padding-vertical: 9rem;
+  }
+
+  .feature--inverted .feature__content {
+    order: 2;
   }
 }
