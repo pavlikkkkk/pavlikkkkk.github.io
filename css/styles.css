@@ -836,6 +836,10 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
 }
 
+.block-showcase__heading {
+  --padding-vertical: 2rem;
+}
+
 .showcase-block__image {
   width: 100%;
 }
@@ -864,6 +868,11 @@ a {
   .block-showcase__content {
     margin-left: 0.5rem;
   }
+
+  .block-showcase__heading {
+    --padding-vertical: 5rem;
+  }
+
   .block-showcase {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   }
