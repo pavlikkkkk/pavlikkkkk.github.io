@@ -205,7 +205,7 @@ a {
 }
 
 .button--stretched {
-  padding: 2.5rem 9rem;
+  padding: 2.5rem 8rem;
 }
 
 .button--hero {
@@ -224,7 +224,7 @@ a {
   justify-content: center;
   align-items: center;
   background: #ff3400;
-  padding: 2rem 4.5rem 2rem 3rem;
+  padding: 2rem 4vw;
   color: white;
   font-weight: bold;
 }
@@ -302,6 +302,7 @@ a {
 }
 
 .input-group .input {
+  width: 0;
   border: none;
   flex-grow: 1;
   padding: 1.5rem 2rem;
@@ -319,7 +320,7 @@ a {
 
 /* Cards */
 .card {
-  border-radius: 7px;
+  border-radius: 10px;
   box-shadow: 0 0 20px 10px #e7e7e7;
   overflow: visible;
 }
@@ -539,6 +540,13 @@ a {
   }
 }
 
+@media screen and (min-width: 876px) {
+  .testimonial__image > .icon-container {
+    position: absolute;
+    top: 2rem;
+    right: -12px;
+  }
+}
 /* Callouts */
 .callout {
   padding: 4rem;
@@ -595,7 +603,7 @@ a {
 
 .collapsible__heading {
   margin-top: 0;
-  font-size: 3rem;
+  font-size: 2.4rem;
 }
 
 .collapsible__chevron {
@@ -673,8 +681,8 @@ a {
 }
 
 .nav__item {
-  padding: 1rem 0;
-  border-bottom: 1px solid #222;
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.74);
 }
 
 .nav__item > a {
@@ -759,9 +767,9 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 6rem 6rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
@@ -785,7 +793,7 @@ a {
 }
 
 .plans-block {
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
   max-width: 80rem;
 }
 
@@ -854,6 +862,7 @@ a {
 .block-showcase__content {
   list-style: none;
   margin-bottom: 4rem;
+  padding-inline-start: 1rem;
 }
 .showcase-block__image {
   width: 100%;
@@ -888,10 +897,10 @@ a {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   }
   .block-showcase__content .media__body > p {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .block-showcase__content .media__title {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
 }
 
@@ -901,14 +910,14 @@ a {
 }
 
 .footer__lists {
-  border-bottom: 1px solid #7b858ba6;
+  border-bottom: 1px solid rgba(113, 122, 128, 0.651);
   padding: 2rem 1rem;
   text-transform: uppercase;
 }
 
 .footer__lists .collapsible__content > ul {
   list-style: none;
-  color: #7b858ba6;
+  color: rgba(113, 122, 128, 0.651);
   margin: 0;
   padding-inline-start: 0;
 }
@@ -919,7 +928,7 @@ a {
 }
 
 .footer__lists .collapsible__content > ul > li > a {
-  color: #7b858ba6;
+  color: rgba(113, 122, 128, 0.651);
 }
 
 .footer__lists .collapsible__content > ul > li > a:hover {
@@ -944,8 +953,8 @@ a {
 }
 
 .footer__brand .copyright {
-  font-size: 1.6rem;
-  color: #7b858ba6;
+  font-size: 1.5rem;
+  color: rgba(113, 122, 128, 0.651);
   white-space: nowrap;
   margin-top: 0.5rem;
 }
