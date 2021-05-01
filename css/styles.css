@@ -446,12 +446,13 @@ a {
 
 /* Quotes */
 .quote {
-  font-size: 3rem;
+  font-size: 2.4rem;
   font-style: italic;
   letter-spacing: 1px;
   word-spacing: 1px;
   line-height: 1.5;
   color: var(--color-body-darker);
+  margin: 1rem;
 }
 
 .quote__text::before {
@@ -505,7 +506,7 @@ a {
 
 /* Testimonials */
 .testimonial {
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .testimonial__image {
@@ -514,12 +515,13 @@ a {
 
 .testimonial__image > img {
   width: 100%;
+  padding: 1rem 2rem 0 2rem;
 }
 
 .testimonial__image > .icon-container {
   position: absolute;
-  top: 3rem;
-  right: -32px;
+  top: 2.3rem;
+  right: -11px;
 }
 
 @media screen and (min-width: 768px) {
@@ -530,7 +532,7 @@ a {
     font-size: 2.4rem;
   }
   .testimonial .quote {
-    margin-left: 10rem;
+    margin-left: 3rem;
   }
   .testimonial .quote .media__image {
     bottom: 14px;
@@ -849,12 +851,12 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
 }
 
-.showcase-block__image {
-  width: 100%;
-}
 .block-showcase__content {
   list-style: none;
   margin-bottom: 4rem;
+}
+.showcase-block__image {
+  width: 100%;
 }
 
 .block-showcase__content > li {
@@ -890,5 +892,97 @@ a {
   }
   .block-showcase__content .media__title {
     font-size: 2.4rem;
+  }
+}
+
+/* Footer block */
+.footer {
+  background-color: #232323;
+}
+
+.footer__lists {
+  border-bottom: 1px solid #7b858ba6;
+  padding: 2rem 1rem;
+  text-transform: uppercase;
+}
+
+.footer__lists .collapsible__content > ul {
+  list-style: none;
+  color: #7b858ba6;
+  margin: 0;
+  padding-inline-start: 0;
+}
+
+.footer__lists .collapsible__content > ul > li {
+  margin: 1.5rem 0;
+  text-transform: none;
+}
+
+.footer__lists .collapsible__content > ul > li > a {
+  color: #7b858ba6;
+}
+
+.footer__lists .collapsible__content > ul > li > a:hover {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer__lists .collapsible__heading {
+  color: white;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.footer__lists .collapsible__chevron {
+  margin-top: 0.6rem;
+  opacity: 0.6;
+}
+
+.footer__brand {
+  margin-top: 7.5rem;
+  text-align: center;
+}
+
+.footer__brand .copyright {
+  font-size: 1.6rem;
+  color: #7b858ba6;
+  white-space: nowrap;
+  margin-top: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer .grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer__lists {
+    margin: 0 auto;
+  }
+
+  .footer__lists .collapsible__heading {
+    font-size: 1.8rem;
+  }
+
+  .footer__lists .collapsible__content > ul > li {
+    font-size: 1.6rem;
+  }
+
+  .footer__brand img {
+    width: 100%;
+  }
+
+  .footer__brand {
+    margin: 2rem 5rem 0 0;
+    order: -1;
+  }
+  .footer__lists .collapsible__chevron {
+    display: none;
+  }
+  .footer__lists {
+    border: none;
+  }
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
   }
 }
