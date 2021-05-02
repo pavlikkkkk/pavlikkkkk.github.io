@@ -731,6 +731,7 @@ a {
 .hero {
   margin: 0;
   clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  --padding-vertical: 12rem;
 }
 
 .hero__tagline {
@@ -799,7 +800,6 @@ a {
 @media screen and (min-width: 1024px) {
   .plans-block:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(207, 207, 207, 0.897);
     transition: 0.5s ease-in-out;
   }
   .plan--popular {
