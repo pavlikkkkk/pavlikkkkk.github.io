@@ -205,7 +205,7 @@ a {
 }
 
 .button--stretched {
-  padding: 2.5rem 8rem;
+  padding: 2.5rem 6vw;
 }
 
 .button--hero {
@@ -550,13 +550,12 @@ a {
 /* Callouts */
 .callout {
   padding: 4rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .callout--primary {
   background-color: var(--color-primary);
   color: #fff;
-  letter-spacing: 1px;
 }
 
 .callout__content {
@@ -564,7 +563,7 @@ a {
 }
 
 .callout__text {
-  word-spacing: 2px;
+  word-spacing: 1px;
 }
 
 .callout__heading {
@@ -591,7 +590,7 @@ a {
 
   .callout .button {
     justify-self: start;
-    margin: 0 2rem;
+    margin-left: 2.5rem;
   }
 }
 
@@ -861,6 +860,7 @@ a {
 
 .block-showcase__content {
   list-style: none;
+  margin-top: 1rem;
   margin-bottom: 4rem;
   padding-inline-start: 1rem;
 }
@@ -993,5 +993,20 @@ a {
   .footer .collapsible__content {
     opacity: 1;
     max-height: 100%;
+  }
+}
+/* Callout block */
+.callout-block {
+  background-image: linear-gradient(0deg, #232323 50%, #fff 50%);
+}
+
+.callout-block__container {
+  margin: 0 auto;
+  max-width: 978px;
+}
+
+@media screen and (min-width: 1024px) {
+  .callout-block {
+    background-image: linear-gradient(0deg, #232323 60%, #fff 40%);
   }
 }

@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Deploy your websites in less than 2 minutes.">
+    <meta property="og;title" content="Moshify">
+    <meta property="og:description" content="Moshify is a brand new place to create a website. Go check it out!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VifGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80">
+    <meta property="og:url" content="http://moshify.com">
+    <title>Moshify - Go Online for Just $9</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;300;500;600;700&display=swap"
@@ -11,6 +17,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -29,14 +36,14 @@
     </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header data-aos="fade-right" class="block__header hero__content">
           <h1 class="block__heading">Cloud Hosting For Pros</h1>
           <p class="hero__tagline">
             Deploy your website in less than 60 seconds.
           </p>
           <a href="/" class="button button--hero button--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="fade-left">
           <source type="image/webp" srcset="/images/banner1x.webp 1x, /images/banner2x.webp 2x">
           <source type="image/png" srcset="/images/banner1x.png 1x, /images/banner2x.png 2x">
           <img class="hero__image" src="/images/banner.png" alt="" />
@@ -62,7 +69,7 @@
         <li>.net $16.15</li>
         <li>.xyz $10.15</li>
       </ul>
-      <section class="container domains">
+      <section data-aos="zoom-in-down" class="container domains">
         <div class="plan plans-block">
           <div class="card card--secondary">
             <header class="card__header">
@@ -130,7 +137,7 @@
         <h2>Host On The Cloud to Keep Growing</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, beatae!</p>
     </header>
-    <article class="grid grid--1x2 feature">
+    <article data-aos="fade-up" class="grid grid--1x2 feature">
         <div class="feature__content">
             <span class="icon-container">
                 <svg class="icon icon--primary">
@@ -150,7 +157,7 @@
     </article>
 </section>
 <section class='block container'>
-    <article class="grid grid--1x2 feature  feature--inverted">
+    <article data-aos="fade-up" class="grid grid--1x2 feature  feature--inverted">
         <div class="feature__content">
             <span class="icon-container">
                 <svg class="icon icon--primary">
@@ -170,8 +177,8 @@
         </picture>
     </article>
 </section>
-<section class="block container">
-    <article class="grid grid--1x2 feature">
+<section  class="block container">
+    <article data-aos="fade-up" class="grid grid--1x2 feature">
         <div class="feature__content">
             <span class="icon-container">
                 <svg class="icon icon--primary">
@@ -192,7 +199,7 @@
     </article>
 </section>
 <section class="block container">
-    <article class="grid grid--1x2 feature  feature--inverted">
+    <article data-aos="fade-up" class="grid grid--1x2 feature feature--inverted">
         <div class="feature__content">
             <span class="icon-container">
                 <svg class="icon icon--primary">
@@ -217,12 +224,12 @@
     <h2 class="block__heading">User-Friendly Control Panel</h2>
   </header>
   <div class="container grid grid--1x2">
-    <picture>
+    <picture data-aos="zoom-in-right">
       <source type="image/webp" srcset="images/ipad_1x.webp 1x, images/ipad_2x.webp 2x" />
       <source type="image/jpg" srcset="images/ipad@1x.jpg 1x, images/ipad@2x.jpg 2x" />
       <img class="showcase-block__image" src="/images/ipad.jpg" alt="" />
     </picture>
-    <ul class="block-showcase__content">
+    <ul data-aos="zoom-in-left" class="block-showcase__content">
       <li>
         <div class="media">
           <div class="media__image">
@@ -282,7 +289,7 @@
     <h2>What Our Customers Are Saying</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolor!</p>
   </header>
-  <div class="card testimonial">
+  <div data-aos="zoom-in" class="card testimonial">
     <div class="grid grid--1x2">
       <div class="testimonial__image">
         <img src="/images/testimonial.jpg" alt="a happy smiling customer" />
@@ -312,6 +319,20 @@
           </div>
         </footer>
       </blockquote>
+    </div>
+  </div>
+</section>
+<section class=" block callout-block">
+  <div class="callout-block__container callout callout--primary">
+    <div class="grid grid--1x2">
+      <div class="callout__content">
+        <h2 class="callout__heading">Ready To Get Started?</h2>
+        <p class="callout__text">
+          Choose the hosting provider that helps
+          you start easy, build fast, and grow strong! It’s risk-free with our 14-day money back guarantee.
+        </p>
+      </div>
+      <a href="" class="button button--stretched button--hero button--alternative">Get Started</a>
     </div>
   </div>
 </section>
@@ -375,13 +396,13 @@
     </section>
     <section class="footer__lists">
       <div class="collapsible">
-        <header class="collapsible__header">
+        <div class="collapsible__header">
           <h2 class="collapsible__heading">Support</h2>
           <svg class="icon icon--white collapsible__chevron">
             <use xlink:href="images/sprite.svg#chevron"></use>
           </svg>
           </span>
-        </header>
+        </div>
         <div class="collapsible__content">
           <ul>
             <li>
@@ -442,5 +463,9 @@
     </section>
   </div>
     <script src="/js/main.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
   </body>
 </html>
