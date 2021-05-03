@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@parcel/config-default": "^2.0.0-alpha.3",
     "@parcel/optimizer-htmlnano": "^2.0.0-alpha.3",
     "html-minifier": "^4.0.0",
     "htmlnano": "^1.0.0",
