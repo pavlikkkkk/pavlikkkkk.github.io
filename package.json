@@ -1,15 +1,24 @@
 {
   "name": "moshify",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  },
+  "devDependencies": {},
   "scripts": {"build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavlikkkkk/pavvvsite.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "parcel-bundler": "^1.12.4"
-  }
+  "bugs": {
+    "url": "https://github.com/pavlikkkkk/pavvvsite/issues"
+  },
+  "homepage": "https://github.com/pavlikkkkk/pavvvsite#readme"
 }
