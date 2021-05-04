@@ -663,7 +663,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 1rem 0.5rem;
+  padding: 1rem 1rem 0 0;
   align-items: center;
 }
 
