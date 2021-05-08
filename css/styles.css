@@ -886,7 +886,7 @@ a {
   }
 
   .block-showcase {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   }
   .block-showcase__content .media__body > p {
     font-size: 1.8rem;
