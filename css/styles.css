@@ -442,7 +442,6 @@ a {
 .quote {
   font-size: 2.4rem;
   letter-spacing: 1px;
-  word-spacing: 1px;
   line-height: 1.5;
   color: var(--color-body-darker);
   margin: 1rem;
@@ -620,7 +619,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 4rem;
+  --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
 }
 
