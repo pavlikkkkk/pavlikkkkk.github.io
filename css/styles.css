@@ -621,7 +621,7 @@ a {
 
 /* Blocks */
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
 }
 
