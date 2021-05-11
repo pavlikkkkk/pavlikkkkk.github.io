@@ -209,7 +209,7 @@ a {
 }
 
 .button--hero:hover {
-  background: #f33506;
+  background: #db3005;
   transition: 0.1s ease-in;
 }
 
@@ -224,7 +224,7 @@ a {
 }
 
 .button--search:hover {
-  background: #f53506;
+  background: #df3207;
 }
 
 .search {
